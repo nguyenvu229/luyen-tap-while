@@ -8,7 +8,8 @@
 </head>
 <body>
   <button type="button" onclick="count()">Start counting</button>
-  <p id = "count"></p>
+  <p id="title"></p>
+  <p id="count"></p>
   
   <script>
     function count() {
@@ -19,6 +20,7 @@
         numString += i + " - "
         i++
       }
+      document.getElementById("title").innerHTML = "In cac so tu 1-99:"
       document.getElementById("count").innerHTML = numString
       alert("Đã hoàn thành !")
     }
