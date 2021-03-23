@@ -12,19 +12,17 @@
 
   <script>
     function tinhTong() {
-      let num = 0
+      let num = 7
       let sum = 0
       let count = 0
 
       while(1) {
         if(count == 30) {
           break
-        }
-        if(num % 7 == 0) {
-          sum += num
-          count++
-        }
-        num++
+        }        
+        sum += num
+        num += 7
+        count++
       }
       document.getElementById("result").innerHTML = "Tong 30 so dau tien chia het cho 7: " + sum
     }
