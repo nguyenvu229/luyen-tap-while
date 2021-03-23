@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="printTo100()">Print</button>
+  <p id="result"></p>
+
+  <script>
+    function printTo100() {
+      let count = 1
+      let numString = ""
+      let num
+      
+      while(count <= 100) {
+        num = count
+
+        if (num % 3 == 0 && num % 5 == 0) {
+          num = "fizzbuzz"
+        } else if (num % 3 == 0) {
+          num = "fizz"
+        } else if (num % 5 == 0) {
+          num = "buzz"
+        }
+
+        numString += num + " - "
+        count++
+      }
+      document.getElementById("result").innerHTML = numString
+    }
+
+  </script>
+</body>
+</html>

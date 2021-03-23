@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="count()">Start counting</button>
+  <p id = "count"></p>
+  
+  <script>
+    function count() {
+      let i = 1
+      let numString = ""
+
+      while(i < 100) {
+        numString += i + " - "
+        i++
+      }
+      document.getElementById("count").innerHTML = numString
+      alert("Đã hoàn thành !")
+    }
+  </script>
+
+</body>
+</html>

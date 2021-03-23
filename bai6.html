@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="tinhTong()">Tinh tong</button>
+  <p id="result"></p>
+
+  <script>
+    function tinhTong() {
+      let num = 0
+      let sum = 0
+      let count = 0
+
+      while(1) {
+        if(count == 30) {
+          break
+        }
+        if(num % 7 == 0) {
+          sum += num
+          count++
+        }
+        num++
+      }
+      document.getElementById("result").innerHTML = "Tong 30 so dau tien chia het cho 7: " + sum
+    }
+  </script>
+
+</body>
+</html>

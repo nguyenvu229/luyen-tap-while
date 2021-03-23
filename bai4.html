@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="printFibo()">Find</button>
+  <p id="fibo"></p>
+
+  <script>
+    function printFibo() {
+      let num1 = 1
+      let num2 = 1
+      let tempNum
+      let count = 0
+
+      while(1) {
+        if(num2 % 5 == 0) {
+          break
+        }
+        tempNum = num2
+        num2 = num1 + num2
+        num1 = tempNum
+      }
+      document.getElementById("fibo").innerHTML = "So fibonacci dau tien chia het cho 5 la: " + num2
+    }
+  </script>
+
+</body>
+</html>
