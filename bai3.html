@@ -9,6 +9,7 @@
 <body>
   
   <button type="button" onclick="printFibo()">Print Fibonacci</button>
+  <p id="title"></p>
   <p id="fibo"></p>
   
   <script>
@@ -24,6 +25,7 @@
         num2 = num1 + num2
         count++
       }
+      document.getElementById("title").innerHTML = "20 so Fibonacci dau tien: "
       document.getElementById("fibo").innerHTML = fiboString
     }
   </script>
